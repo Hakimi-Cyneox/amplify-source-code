@@ -78,33 +78,33 @@ internal fun FreshnessChallenge(
         }
     }
 
-    Canvas(modifier = modifier) {
-        currentFrame?.let { frame ->
-            when (frame.sceneType) {
-                is SceneType.DownScroll -> {
-                    // This is the point on the y axis where current color should be above and
-                    // the previous color should be below
-                    val yAxisCompletion = size.height * frame.sceneCompletionPercentage
-
-                    // Draw current color to the top of screen based on completion
-                    drawRect(
-                        color = frame.currentColor,
-                        size = Size(size.width, yAxisCompletion)
-                    )
-
-                    frame.previousColor?.let {
-                        // Draw previous color to the bottom of the screen based on completion
-                        drawRect(
-                            color = frame.previousColor,
-                            topLeft = Offset(0f, yAxisCompletion),
-                            size = Size(size.width, size.height - yAxisCompletion.toInt())
-                        )
-                    }
-                }
-                is SceneType.Flat -> {
-                    drawRect(frame.currentColor)
-                }
-            }
-        }
-    }
+//    Canvas(modifier = modifier) {
+//        currentFrame?.let { frame ->
+//            when (frame.sceneType) {
+//                is SceneType.DownScroll -> {
+//                    // This is the point on the y axis where current color should be above and
+//                    // the previous color should be below
+//                    val yAxisCompletion = size.height * frame.sceneCompletionPercentage
+//
+//                    // Draw current color to the top of screen based on completion
+//                    drawRect(
+//                        color = frame.currentColor,
+//                        size = Size(size.width, yAxisCompletion)
+//                    )
+//
+//                    frame.previousColor?.let {
+//                        // Draw previous color to the bottom of the screen based on completion
+//                        drawRect(
+//                            color = frame.previousColor,
+//                            topLeft = Offset(0f, yAxisCompletion),
+//                            size = Size(size.width, size.height - yAxisCompletion.toInt())
+//                        )
+//                    }
+//                }
+//                is SceneType.Flat -> {
+//                    drawRect(frame.currentColor)
+//                }
+//            }
+//        }
+//    }
 }

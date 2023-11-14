@@ -15,7 +15,7 @@
   -->
 
 <resources>
-    <string name="amplify_ui_liveness_get_ready_page_title">Liveness Check</string>
+    <string name="amplify_ui_liveness_get_ready_page_title">Liveness Check removed color test</string>
     <string name="amplify_ui_liveness_get_ready_page_description">You will go through a face verification process to prove that you are a real person. Your screen\'s brightness will temporarily be set to 100\% for highest accuracy.</string>
     <string name="amplify_ui_liveness_get_ready_photosensitivity_title">Photosensitivity Warning</string>
     <string name="amplify_ui_liveness_get_ready_photosensitivity_description">This check displays colored lights. Use caution if you are photosensitive.</string>

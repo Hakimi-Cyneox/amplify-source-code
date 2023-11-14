@@ -22,8 +22,8 @@ import com.amplifyframework.predictions.aws.models.RgbColor
 internal fun RgbColor.toComposeColor(alpha: Int) =
     Color(
         red = red,
-        green = red,
-        blue = red,
+        green = green,
+        blue = blue,
         alpha = alpha
     )
 
